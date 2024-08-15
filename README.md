@@ -1,4 +1,4 @@
-# Sportorium_UVY
+# EquipZone UVY
 This website is made for the purpose of issuing sports equipments to students. 
 We'll be adding the following features for faculty and students : 
 (1) Faculty and student login page will be added,
