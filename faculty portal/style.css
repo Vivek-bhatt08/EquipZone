@@ -633,3 +633,44 @@ html, body{
     transform: scale(1.05);
     transition: 0.5s;
 }
+
+
+
+
+/* for my mobile */
+@media only screen and (max-width:400px){
+    .item2{
+        grid-row-start:1 ;
+        grid-row-end:4 ;
+        grid-column-start:1 ;
+        grid-column-end: 16;
+    }
+    .item6{
+        grid-row-start:4 ;
+        grid-row-end:7 ;
+        grid-column-start:1 ;
+        grid-column-end: 16;
+    }
+    .item3{
+        grid-row-start:7 ;
+        grid-row-end:10 ;
+        grid-column-start:1 ;
+        grid-column-end: 16;
+    }
+    .item4{
+        display: none;
+    }
+    .item5{
+        display: none;
+    }
+    .item1{
+        display: none;
+    }
+    .issueSectionText p{
+        font-size: 16px;
+    }
+    .issueSectionText span{
+        font-size: 16px;
+    }
+    
+}
