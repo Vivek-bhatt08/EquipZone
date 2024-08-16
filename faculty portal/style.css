@@ -406,6 +406,7 @@ html, body{
     width:97%;
     margin-left: 1.5%;
     background-color: white;
+    display: flex;
 } 
 #issuehere{
     height: 100%;
@@ -639,32 +640,73 @@ html, body{
 
 /* for my mobile */
 @media only screen and (max-width:400px){
-    .item2{
+    #main{
+        height: 180%;
+    }
+    #Sactivity{
+        height: 400px;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    }
+    .item1{
         grid-row-start:1 ;
         grid-row-end:4 ;
         grid-column-start:1 ;
-        grid-column-end: 16;
+        grid-column-end: 8;
     }
-    .item6{
-        grid-row-start:4 ;
-        grid-row-end:7 ;
-        grid-column-start:1 ;
+    .item2{
+        grid-row-start:1 ;
+        grid-row-end:4 ;
+        grid-column-start:8 ;
         grid-column-end: 16;
     }
     .item3{
+        grid-row-start:4 ;
+        grid-row-end:7 ;
+        grid-column-start:1 ;
+        grid-column-end: 8;
+    }
+    .item4{
+        grid-row-start:4 ;
+        grid-row-end:7 ;
+        grid-column-start:8 ;
+        grid-column-end: 16;
+    }
+    .item5{
         grid-row-start:7 ;
         grid-row-end:10 ;
         grid-column-start:1 ;
+        grid-column-end: 8;
+    }
+    .item6{
+        grid-row-start:7 ;
+        grid-row-end:10 ;
+        grid-column-start:8 ;
         grid-column-end: 16;
     }
-    .item4{
-        display: none;
+    .pop{
+        font-size: 26px;
     }
-    .item5{
-        display: none;
+    #issuesection{
+        display: block;
+        height: 880px;
+        overflow: hidden;
     }
-    .item1{
-        display: none;
+    #issuehere{
+        height: 50%;
+        width: 100%;
+        display: grid;
+        grid-template-columns:20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+    }
+    #events{
+        height: 50%;
+        width: 100%;
+        margin-left: 0;
+        display: grid;
+        grid-template-columns:25% 25% 25% 25%;
+        grid-template-rows: 25% 25% 25% 25%; 
+        padding: 10px;
     }
     .issueSectionText p{
         font-size: 16px;
@@ -672,5 +714,4 @@ html, body{
     .issueSectionText span{
         font-size: 16px;
     }
-    
 }
