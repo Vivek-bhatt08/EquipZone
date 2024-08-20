@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        html,body{
+            height:100%;
+            width: 100%;
+            background-image: url("bg.jpg");
+            background-position:center;
+            background-size:cover;
+            color:azure;
+        }
+        #nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 10vw;
+            width:100%;
+            margin-top: 0;
+        }
+        #nav img{
+            height:10vw;
+            width:10vw;
+            position: relative;
+            margin-left:30%;
+        }
+        #nav ul li{
+            list-style-type:none;
+            display:inline-block;
+            padding:10px 20px;
+        }
+        ul{
+            position:relative;
+            margin-right:3%;
+        }
+        a{
+            text-decoration: none;
+            color:whitesmoke;
+            padding:10px;
+            border-radius: 3px;
+            transition: 1s;
+        }
+        a:hover{
+            background-color: gray;
+        }
+        .form{
+            margin: auto;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            height:60vh;
+            width: 80vh;
+            /* border: 1px solid white; */
+        }
+        .form img{
+            position: relative;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            height: 80px;
+            width: 90px;
+        }
+        .form i {
+            position: absolute;
+            color:white;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius:30px;
+            font-size: 20px;
+        }
+
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+        }
+
+        .input-field {
+            border-radius: 50px;
+            width: 65%;
+            padding: 10px;
+            text-align: center;
+            background-color:aliceblue ;
+            border:2px solid white;
+            opacity: 0.6;
+            font-size: 15px;
+        }
+        .input-field:hover{
+            transform:scale(1.05);
+            transition:1s;
+        }
+        ::placeholder {
+            color: black;
+            opacity: 1; /* Firefox */
+        }
+        ::-ms-input-placeholder { /* Edge 12 -18 */
+            color: black;
+            opacity: 1;
+        }
+        .LOGIN button{
+            width:65%;
+            height: 40px;
+            color:white;
+            background-color: #FB646B;
+            font-weight:700;
+            border-radius: 50px;
+            margin-top: 30px;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+        .footer{
+            width:100%;
+            display: flex;
+            position:absolute;
+            bottom: 30px;
+            justify-content: space-around;
+            gap:45%;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div class="img"><img src="1.png" alt="logo"/></div>
+        <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="form">
+        <center>
+        <div>
+            <img src="2.png" alt="logo2">
+        </div>
+        <form method="get" action="">
+            <div>
+                <!-- username input -->
+                <i class="fa fa-user icon"></i>
+                <input type="text" class="input-field" placeholder="Username"  required/>
+            </div>
+            <div style="margin-top: 20px;">
+                <!-- password input -->
+                <i class="fa fa-lock icon" class=""></i>
+                <input class="input-field" type="password" placeholder="Password">
+            </div>
+
+
+            <div class="LOGIN">
+                <button>GET STARTED</button>
+            </div>
+            <div style="
+            display:flex;
+            color:white;
+            justify-content:center;
+            width:100%;
+            margin-top: 25px;
+            gap:160px;
+            ">
+                <div style="font-size: 13px;">Keep Logged in</div>
+                <div style="font-size: 13px;">Forgot Password?</div>
+            </div>
+
+
+            <div style="
+            display:flex;
+            color:white;
+            justify-content:center;
+            width:100%;
+            margin-top: 15px;
+            gap:130px;
+            ">
+                <div style="font-size: 13px; font-weight: 600;">CREATE ACCOUNT</div>
+                <div style="font-size: 13px; font-weight: 600;">NEED HELP?</div>
+            </div>
+        </form>
+    </center>
+    </div>
+    <div class="footer">
+        <div>
+            About Us &emsp;
+            Privacy Policy &emsp;
+            Terms Of Use
+        </div>
+        <div>
+            &copy; 2024 Key.&emsp;  All Rights Reserved | Design by Yuvraj
+        </div>
+    </div>
+</body>
+</html>
