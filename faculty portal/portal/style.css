@@ -252,7 +252,7 @@ html, body{
     grid-column-start:1 ;
     grid-column-end:4 ;
     border-radius: 20px;
-    background-image: url('images/tennis.avif');
+    background-image: url('images/tennis.jpeg');
     background-position: center;
     background-size: cover;
     cursor: pointer;
@@ -264,7 +264,7 @@ html, body{
     grid-column-start:1 ;
     grid-column-end:4 ;
     border-radius: 20px;
-    background-image: url('images/table\ tennis.avif');
+    background-image: url('images/table\ tennis.jpeg');
     background-position: center;
     background-size: cover;
     cursor: pointer;
@@ -288,7 +288,7 @@ html, body{
     grid-column-start:10 ;
     grid-column-end:13 ;
     border-radius: 20px;
-    background-image: url('images/8ball.avif');
+    background-image: url('images/8ball.jpeg');
     background-position: center;
     background-size: cover;
     cursor: pointer;
@@ -653,7 +653,7 @@ html, body{
 /* for my mobile */
 @media only screen and (max-width:400px){
     #main{
-        height: 180%;
+        height: 200%;
     }
     #Sactivity{
         height: 400px;
