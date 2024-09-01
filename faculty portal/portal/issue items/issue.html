@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sports Equipment Issuance Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <main>
+        <div class="form-here">
+            <div class="head">
+                <h1>Sports Equipment Issuance </h1>
+            </div>
+            <div class="content">
+                    <div class="SName">
+                        <label for="student_name">Student Name:</label>
+                        <input type="text" required placeholder="Enter Student's Name">
+                    </div>
+    
+                    <div class="s_id">
+                        <label for="student_id">Student ID:</label>
+                        <input type="text"  required placeholder="Enter Student' ID">
+                    </div>
+    
+                    <div class="dept">
+                        <label for="department">Department:</label>
+                        <select id="department" name="department" required>
+                            <option value="">Select Department</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Electrical Engineering">Electrical Engineering</option>
+                        </select>
+                    </div>
+    
+    
+                    <div class="contact">
+                        <label for="contact_number">Contact Number:</label>
+                        <input type="tel" required placeholder="Enter Contact Number">
+                    </div>
+                    <br><br>
+                    <div class="equip">
+                        <label for="Equipment Selection" style="font-size: 25px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Equipment Selection</label><br> <br>
+                        <input type="checkbox" name="equipment[]">
+                        <label for="football">Football</label><br>
+                        <input type="checkbox"  name="equipment[]">
+                        <label for="basketball">Basketball</label><br>
+                        
+                    </div>
+    
+                    <div class="submit-button">
+                        <button type="submit">Submit</button>
+                    </div>
+            </div>
+        </div>
+        <div class="image">
+        </div>
+   </main>
+</body>
+</html>
