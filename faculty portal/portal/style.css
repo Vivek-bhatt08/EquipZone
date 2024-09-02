@@ -29,7 +29,7 @@ html, body{
 
 #nav{
     border-top-left-radius: 20px;
-    width: 6%;
+    width: 7%;
     height: 100%;
     background-color: rgb(72,58,111);
 }
@@ -40,14 +40,14 @@ html, body{
 }
 #navicons{
     height: 100%;
-    width: 5.5%;
+    width: 6.2%;
     border-top-left-radius: 20px;
     background-color: rgb(72,58,111);
     position: fixed;
 
 }
 .icons{
-    width: 100%;
+    width: 99.5%;
     height: 60px;
     text-align: center;
     align-content: center;
@@ -73,19 +73,7 @@ html, body{
     background-position: center;
     margin-top: 20px;
 }
-#issue-new-item-icon{
-    height: 80%;
-    width: 50%;
-    margin: auto;
-    background-image: url('icon\ image/1.png');
-    background-position: center;
-    background-size:cover;
-}
-#issue-new-item-icon:hover{
-    background-image: url('icon\ image/2.png');
-    background-position: center;
-    background-size:cover;
-}
+
 
 
 /* media query for the nav bar responsive */
@@ -476,7 +464,7 @@ html, body{
     grid-column-start:1 ;
     grid-column-end: 6;
     border-radius: 20px;
-    background-image: url(images/fusball.avif) ;
+    background-image: url(images/martial.jpg) ;
     background-position: center;
     background-size: cover;
     opacity: 0.85;
@@ -490,7 +478,7 @@ html, body{
     grid-column-start:1 ;
     grid-column-end: 6;
     border-radius: 20px;
-    background-image: url(images/squash.avif) ;
+    background-image: url(images/bowling.jpg) ;
     background-position: center;
     background-size: cover;
     opacity: 0.85;
