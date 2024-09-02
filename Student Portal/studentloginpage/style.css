@@ -3,20 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-input{
-    background-color: red;
 
-}
 html, body{
     height: 100%;
     width: 100%;
     color: white;
+   
 }
 #main{
     height: 100%;
     width: 100%;
-   /* background-image: url(https://media.istockphoto.com/id/1218368337/photo/close-up-of-maintained-lawn-at-football-stadium.webp?b=1&s=612x612&w=0&k=20&c=pKTap0CbeQDW3FUyO9mcSW2C-Tx3ZJ7HXWJ6CHXDdk0=); */
-   /* background-image: url(https://images.unsplash.com/photo-1556764420-14bce47a31da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHNwb3J0cyUyMGRhcmt8ZW58MHx8MHx8fDA%3D); */
    background-image: url(stadium.avif);
    background-position: center;
    background-size: cover;
@@ -38,8 +34,10 @@ position: relative;
     display: flex;
     align-items: center;
     position: relative;
-    /* margin-bottom: 3vw; */
 
+}
+#nav h5{
+    display: none;
 }
 #navpart1{
     height: 25%;
@@ -69,29 +67,28 @@ position: relative;
 #nav-part2 h3{
     font-family: Mona Sans;
     font-size: 1.1vw;
-    /* font-weight: 400; */
     cursor: pointer;
     color: #fff;
 }
 #nav-part2 h3:hover{
     text-decoration: underline;
+    transition: all ease .2s;
     transform: scale(1.1);
 
 }
 #page2{
     height: calc(100% - 22%);
     width: 100%;
-    /* background-color: red; */
-    position: relative;
+     /* background-color: red;  */
+     position: relative;
     padding: 1vw 2vw;
-}
+ }    
 #page-part1{
-    height: 110%;
+    height: 100%;
     width: 40%;
     /* background-color: blueviolet; */
   position: relative;
   left: 30%;
-  top: -5%;
   border-radius: 1vw;
   border: 1px solid #fff ;
 }
@@ -99,105 +96,100 @@ position: relative;
     height: 15%;
     width: 15%;
     /* background-color: blue; */
-    position: absolute;
-    top: 5%;
-    left: 42%;
-    /* border-radius: px; */
+    left: 42%;  
     overflow: hidden;
+   margin-left: auto;
+   margin-right: auto;
 
 }
 #subpart1 img{
     height: 100%;
     width: 100%;
-    /* background-position: cover; */
     object-fit: cover;
 }
-#part2{
-    height: 25%;
-    width: 100%;
-    /* background-color: blue; */
-    margin-left: 2vw;
-}
+
 #part3{
     height: 40%;
     width: 100%;
     /* background-color: seagreen; */
-    /* backdrop-filter: blur(5px); */
     position: relative;
 
 }
  #part3 .type1{
     height: 3vw;
     width: 65%;
-    position: absolute;
-    left: 18%;
-    top: 12%;
     border-radius: 50px;
     /* background-color: black; */
     border: none;
-    /* padding: 0vw 5vw; */
-    /* background:transparent; */
-    /* filter: blur(5px); */
-    background-color: transparent;
     border: 2px solid #fff;
     padding: 2vw 3.2vw;
     font-size: 1vw;
     font-family: Mona Sans;
     color: #000;
+
    
 }
 #part3 .type2{
     height: 3vw;
     width: 65%;
-    position: absolute;
-    /* margin-top: 1.5vw; */
+   
     border-radius: 50px;
-    left: 18%;
-    top: 30%;
+    
     border: none;   
     padding: 2vw 3.2vw;
     font-size: 1vw;
-    background-color: transparent;
+  
+
     border: 2px solid #fff;
-    margin-top:3vw;
+    
 }
+#part3 .type1:hover{
+background-color: transparent;
+}
+#part3 .type2:hover{
+    background-color: transparent;
+    }
 .type1::placeholder{
     color: #000;
-    font-weight:700;
-
-   
+    font-weight:700;  
 }
 .type2::placeholder{
     color: #000;
     font-weight:700;
-    /* border: 2px solid #fff; */
 }
 #part3 #input-part1 i{
-    position: absolute;
-    top: 21%;
-    left: 22%;
-    /* transform: translateY(-50%); */
-    
+    position: relative;
+    right: -8%;
+    font-size: 1.2vw;  
 }
 i{
-    color: #000000;
+    color: #000;
     font-weight: 1000;
+    font-size: 1.2rem;
+    background-color: transparent;
 }
 #input-part1{
     height: 48%;
     width: 100%;
     /* background-color: aqua; */
+    display: flex;
+justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+
 }
 #input-part2{
-    height: 50%;
+    height: 48%;
     width: 100%;
     /* background-color: rgb(4, 255, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #part3 #input-part2 i{
-    position: absolute;
-    top: 59%;
-    left: 22%;
-
+    position: relative;
+    right: -8%;
+    font-size: 1.2vw;
 }
 #bottom{
     height: 95%;
@@ -207,7 +199,7 @@ i{
     /* background-color: black; */
 }
 #bottom button{
-    /* text-align: center; */
+  
     width: 25vw;
     padding: 1.5vw 1.5vw;
     border: none;
@@ -221,6 +213,7 @@ i{
     /* margin: 2vw 0; */
     font-weight: 500;
     font-family: Mona Sans;
+    margin-top: 1vw;
 
 }
 
@@ -250,11 +243,158 @@ i{
     margin-top: 1vw;
     padding: 0vw 2vw;
 }
-#bot2 h3{
-    font-weight: 600;
-    font-family: monument;
+#bot2 a{
+    font-size: 1.5vw;
+    text-decoration: none;
+    color:#fff;
+    font-weight: 500;
+    font-family: Mona Sans;
     cursor: pointer;
 }
+@media (max-width:600px){
+    #nav h3{
+        display: none;
+    }
+#nav h5{
+    display: initial;
+    background-color: #fff;
+    
+}
+#navpart1 h1{
+    font-family: monument;
+    font-size: 5vw;
+    font-weight: 500;
+   
+    right: -5%;
+    color: #fff;
+    margin-top: 1vw;
+}
+#page2{
+    height: 70%;
+    width: 100%;
+     /* background-color: red;  */
+     /* position: relative; */
+    padding: 2vw 2vw 1vw;
+ }  
+ #page-part1{
+    height:100%;
+    width: 100%;
+    position: relative;
+  
+    left: 0%;
+    /* background-color: blueviolet; */
+    padding: 1vw 5vw;
+ 
+  border-radius: 1vw;
+  border: 1px solid #fff ;
+}
+#part3 .type1{
+    height: 10vw;
+    width: 75%;
+    border-radius: 50px;
+    /* background-color: black; */
+    border: none;
+    border: 2px solid #fff;
+    padding: 2vw 3.2vw;
+    font-size: 4vw;
+    font-family: Mona Sans;
+    color: #000;
+
+   
+}
+#part3 .type1::placeholder{
+    padding: 0 4vw;
+}
+#part3 .type2{
+    height: 10vw;
+    width: 75%;
+   
+    border-radius: 50px;
+    
+    border: none;   
+    padding: 2vw 3.2vw;
+    font-size: 4vw;
+  
+
+    border: 2px solid #fff;
+    
+}
+#part3 .type2::placeholder{
+    padding: 0 4vw;
+}
+#part3 #input-part1 i{
+    position: relative;
+    right: -8%;
+    font-size: 5vw;  
+}
+#part3 #input-part2 i{
+    position: relative;
+    right: -8%;
+    font-size: 5vw;  
+}
+#bottom{
+    height: 95%;
+    width: 100%;
+
+    /* background-color: #fff; */
+    /* background-color: black; */
+}
+#bottom button{
+  height: 25%;
+    width: 45vw;
+    padding: 1.5vw 1.5vw;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3vw;
+    /* margin: 2vw 0; */
+    font-weight: 500;
+    font-family: Mona Sans;
+    /* margin-top: 1vw; */
+
+}
+#bot1{
+    height:20%;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+}
+#bot1 h3{
+    font-size: 4vw;
+    font-family: Mona Sans;
+    font-weight: 500;
+    cursor: pointer;
+}
+#bot2{
+    height: 22%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1vw;
+    padding: 0vw 2vw;
+}
+#bot2 a{
+    font-size: 4vw;
+    text-decoration: none;
+    color:#fff;
+    font-weight: 500;
+    font-family: Mona Sans;
+    cursor: pointer;
+}
+
+
+}
+
 
 
 

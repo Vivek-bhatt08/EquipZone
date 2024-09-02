@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: 'Mona Sans', sans-serif;
+}
+
+input {
+    background-color: red;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-image: url(stadium.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    position: relative;
+}
+
+#nav {
+    height: 18%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navpart1 {
+    width: 60%;
+}
+
+#navpart1 h1 {
+    font-family: 'Monument', sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+    margin-left: 5%;
+    color: #fff;
+}
+
+#nav-part2 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+#nav-part2 h3 {
+    font-size: 1.1vw;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.3s, text-decoration 0.3s;
+}
+
+#nav-part2 h3:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+#page2 {
+    height: calc(100% - 22%);
+    width: 100%;
+    position: relative;
+    padding: 1vw 2vw;
+}
+
+#page-part1 {
+    height: 110%;
+    width: 40%;
+    background-color: blueviolet;
+    position: relative;
+    left: 30%;
+    top: -5%;
+    border-radius: 1vw;
+    border: 1px solid #fff;
+}
+
+#subpart1 {
+    height: 15%;
+    width: 15%;
+    position: absolute;
+    top: 5%;
+    left: 42%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#subpart1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#part2 {
+    margin-left: 2vw;
+}
+
+#part3 {
+    height: 40%;
+    width: 100%;
+    position: relative;
+}
+
+#part3 .type1,
+#part3 .type2 {
+    width: 65%;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-size: 1vw;
+    font-family: 'Mona Sans', sans-serif;
+    color: #000;
+    padding: 2vw 3.2vw;
+    position: absolute;
+    left: 18%;
+}
+
+#part3 .type1 {
+    top: 12%;
+}
+
+#part3 .type2 {
+    top: 30%;
+    margin-top: 3vw;
+}
+
+.type1::placeholder,
+.type2::placeholder {
+    color: #000;
+    font-weight: 700;
+}
+
+#part3 #input-part1 i,
+#part3 #input-part2 i {
+    color: #000;
+    font-weight: bold;
+}
+
+#input-part1 {
+    height: 48%;
+}
+
+#input-part2 {
+    height: 50%;
+}
+
+#bottom {
+    height: 95%;
+    width: 100%;
+}
+
+#bottom button {
+    width: 25vw;
+    padding: 1.5vw;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 500;
+    font-family: 'Mona Sans', sans-serif;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s;
+}
+
+#bottom button:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#bot1,
+#bot2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    margin-top: 1vw;
+}
+
+#bot1 h3,
+#bot2 h3 {
+    font-size: 1vw;
+    font-family: 'Mona Sans', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#bot2 h3 {
+    font-family: 'Monument', sans-serif;
+    font-weight: 600;
+}
+
+#bot1 h3:hover,
+#bot2 h3:hover {
+    color: #ccc;
+}
