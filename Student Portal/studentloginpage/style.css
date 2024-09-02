@@ -214,8 +214,34 @@ justify-content: center;
     font-weight: 500;
     font-family: Mona Sans;
     margin-top: 1vw;
+    z-index: 1;
 
 }
+button::before{
+    content: "";
+    position: absolute;
+    background-color: #e84949;
+    border-radius: 50px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.5s ease;
+  }
+  
+  button:hover{
+    color: #e84949;
+    
+    
+  }
+  
+  button:hover::before{
+    transform: scaleX(1);
+  }
 
 #bot1{
     height:20%;
