@@ -62,7 +62,8 @@ html, body{
     width: 100%;
     display: flex;
     align-items: center;
-    margin-left: 2.5vw;
+    margin-left: 1.8vw;
+    cursor: pointer;
 }
 
 #main #navwrap #nav #center .ele i{
@@ -73,7 +74,7 @@ html, body{
 }
 
 #main #navwrap #nav #center .ele i:hover{
-    color: grey;
+    color: rgb(29, 204, 195);
 }
 
 #main #navwrap #nav #center .ele h4{
@@ -85,7 +86,7 @@ html, body{
 }
 
 #main #navwrap #nav #center .ele h4:hover{
-    color: grey;
+    color: rgb(29, 204, 195);
 }
 
 #main #navwrap #nav #bottom{
@@ -152,10 +153,28 @@ html, body{
 #main #page2 #top #first input{
     height: 40px;
     width: 300px;
-    border-radius: 10px;
+    
+    border-bottom-right-radius: 10px;
     border: none;
     box-shadow: 2px 2px 2px 2px lightgray;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 3%;
 }
+#first i{
+    height:40px ;
+    width: 50px;
+    /* background-color: yellow; */
+    text-align: center;
+    align-content: center;
+    font-size: 25px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    /* margin-left: 2%; */
+    border-top-left-radius: 10px;
+    cursor: pointer;
+
+}
+
 
 
 #main #page2 #top #second{
@@ -177,12 +196,12 @@ html, body{
 }
 
 #main #page2 #top #second #right{
+    /* background-color: red; */
     height: 100%;
     width: 50%;
     display: flex;
-    justify-content: end;
-    /* align-items: end; */
-    padding: 1vh 2vw;
+    padding-top: 5%;
+    padding-left: 35%;
 }
 
 #main #page2 #top #second #right i{
@@ -251,16 +270,13 @@ html, body{
     color: lightgray;
 }
 
-#main #page2 #container #right{
+#picture{
     height: 100%;
-    width: 38%;
-}
-
-#main #page2 #container #right img{
-    height: 250px;
-    width: 400px;
-    object-fit: cover;
-    object-position: center;
+    width: 35%;
+    /* background-color: red; */
+    background-image: url(Images/cartoon.png);
+    background-position: center;
+    background-size: cover;
 }
 
 #main #page2 #parent{
@@ -409,11 +425,6 @@ html, body{
 #main #page2 #final #first #top{
     height: 30%;
     width: 100%;
-    /* background-color: red; */
-    /* background-color: blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #main #page2 #final #first #top h1{
@@ -425,25 +436,18 @@ html, body{
     margin-left: 2vw;
 }
 
-#main #page2 #final #first #bottom{
+
+#main #page2 #final #first #container{
     height: 70%;
     width: 100%;
-    /* background-color: blue; */
-    /* background-color: green; */
-}
-
-#main #page2 #final #first #bottom .container{
-    height: 100%;
-    width: 100%;
+    background-color: white;
     display: flex;
-    justify-content: space-evenly;
-    align-items: end;
-    gap: 2vw;
+    justify-content: space-between;
 }
 
-#main #page2 #final #first #bottom .container img{
-    height: 80px;
-    width: 100px;
+#main #page2 #final #first #container img{
+    height: 100%;
+    width: 15%;
     border-radius: 50%;
 }
 
@@ -472,9 +476,11 @@ html, body{
 #main #page2 #final #second #bottom{
     height: 85%;
     width: 100%;
+    /* background-color: black; */
     display: flex;
     justify-content: space-evenly;
-    align-items: end;
+    /* align-items:center; */
+    padding-top: 8%;
 }
 
 #main #page2 #final #second #bottom #one{
