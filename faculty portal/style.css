@@ -7,11 +7,11 @@
 html,body{
     height:100%;
     width: 100%;
-    background-image: url("bg.jpg");
-    background-position:center;
-    background-size:cover;
-    color:azure;
+    background-image: url(bg.png);
+    background-position: center;
+    background-size:99% 99%;
     background-repeat: no-repeat;
+    color:azure;
 }
 #nav{
     display: flex;
