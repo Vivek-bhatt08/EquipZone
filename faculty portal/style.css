@@ -9,7 +9,7 @@ html,body{
     width: 100%;
     background-image: url(bg.png);
     background-position: center;
-    background-size:99% 99%;
+    background-size:100% 100%;
     background-repeat: no-repeat;
     color:azure;
 }
@@ -38,14 +38,14 @@ ul{
     position:relative;
     margin-right:3%;
 }
-a{
+.nav ul li a{
     text-decoration: none;
     color:whitesmoke;
     padding:10px;
     border-radius: 3px;
     transition: 1s;
 }
-a:hover{
+.nav ul li a:hover{
     background-color: gray;
 }
 .form{
@@ -120,6 +120,9 @@ a:hover{
 .bottomdiv div{
     cursor:pointer;
     font-size: 13px; 
+}
+.bottomdiv a:hover{
+    background-color: green;
 }
 /* .footer{
     width:100%;
