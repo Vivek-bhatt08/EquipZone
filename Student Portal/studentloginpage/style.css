@@ -185,10 +185,10 @@ position: relative;
     
 }
 #part3 .type1:hover{
-background-color: transparent;
+background-color: white;
 }
 #part3 .type2:hover{
-    background-color: transparent;
+    background-color: white;
     }
 .type1::placeholder{
     color: #000;
