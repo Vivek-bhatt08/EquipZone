@@ -13,10 +13,10 @@ html, body{
 #main{
     height: 100%;
     width: 100%;
-   background-image: url(bg1.jpeg);
+   background-image: url(stadium.avif);
    background-position:center;
-   background-size:99% 99%;
-   background-repeat: no-repeat;
+   background-size: cover;
+  
 
 
 }
@@ -24,7 +24,7 @@ html, body{
 height: 100%;
 width: 100%;
 /* background-color: yellow; */
-/* backdrop-filter: blur(4px);  */
+backdrop-filter: blur(4px); 
 position: relative;
 
 }
@@ -91,12 +91,52 @@ position: relative;
   position: relative;
   left: 30%;
   border-radius: 1vw;
-  border: 1px solid #fff ;
+   background-image: url(bg1.jpeg);  
+
+  
+  background-size: cover;
+  background-position: center;
+
+
 }
+#page-part1::after,#page-part1::before{
+    content: "";
+    position: absolute;
+    inset: -.3rem;
+    /* background-image: conic-gradient( from var(--angle),transparent ,green); */
+    background: conic-gradient(from var(--angle),transparent ,#ff4545,#00ff99,#006aff,#ff4545);
+    border-radius: inherit;
+    animation: rotate 5s linear infinite;
+    z-index: -1;
+}
+@property --angle{
+    syntax:"<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+#page-part1::before{
+    filter: blur(1.5rem)
+    ;
+}
+@keyframes rotate{
+    0%{
+        --angle:0deg;
+    }
+    100%{
+        --angle:360deg;
+    }
+}
+
+    /* background-image:conic-gradient(#ff4545,#00ff99,#006aff,#ff0095,#ff4545); */
+    /* background-image: conic-gradient( from var(--angle),transparent ,blue);*/
+   
+
+
+
 #subpart1{
     height: 15%;
     width: 15%;
-    /* background-color: blue; */
+    /* background-color: blue;/ */
     left: 42%;  
     overflow: hidden;
    margin-left: auto;
@@ -313,7 +353,7 @@ button::before{
     padding: 1vw 5vw;
  
   border-radius: 1vw;
-  border: 1px solid #fff ;
+  
 }
 #part3 .type1{
     height: 10vw;
