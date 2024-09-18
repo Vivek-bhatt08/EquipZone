@@ -24,7 +24,15 @@ html, body{
     border-top-right-radius: 20px;
     display: flex;
 }
-
+::-webkit-scrollbar{
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb{
+    height: 50px;
+    background-color: #483a6f;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
 /* navbar */
 
 #nav{
@@ -83,7 +91,7 @@ html, body{
         margin-top: 15px;
     }
     #navicons{
-        width: 95%;
+        width: 99%;
         height:85px;
         display: flex;
         position: absolute;

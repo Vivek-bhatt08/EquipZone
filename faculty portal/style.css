@@ -8,8 +8,9 @@ html,body{
     height:100%;
     width: 100%;
     background-image: url(bg.png);
+    /* background-image: url(bg1.jpeg); */
     background-position: center;
-    background-size:100% 100%;
+    background-size:99% 99%;
     background-repeat: no-repeat;
     color:azure;
 }
