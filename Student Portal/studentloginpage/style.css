@@ -24,7 +24,7 @@ html, body{
 height: 100%;
 width: 100%;
 /* background-color: yellow; */
-backdrop-filter: blur(4px); 
+backdrop-filter: blur(3px); 
 position: relative;
 
 }
@@ -103,7 +103,7 @@ position: relative;
     content: "";
     position: absolute;
     inset: -.3rem;
-    /* background-image: conic-gradient( from var(--angle),transparent ,green); */
+    /* background-image: conic-gradient( from var(--angle),transparent ,orange,red,blue,lightblue,darkblue,skyblue,orange); */
     background: conic-gradient(from var(--angle),transparent ,#ff4545,#00ff99,#006aff,#ff4545);
     border-radius: inherit;
     animation: rotate 5s linear infinite;
