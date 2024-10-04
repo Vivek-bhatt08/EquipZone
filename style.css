@@ -49,6 +49,19 @@ html, body{
     display: flex;
     align-items: center;
     gap: 3vw;
+    animation: easyAnime 1s ease 0s 1 forwards;
+    opacity: 0;
+    /* transform: translateY(-100%); */
+    transform: translateY(-100px);
+}
+@keyframes easyAnime{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 #main #nav #second h4{
