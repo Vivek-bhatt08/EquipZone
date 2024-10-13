@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+.inventory-status {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.available {
+    background-color: #28a745;
+    color: white;
+}
+.low-stock {
+    background-color: #ffc107;
+    color: white;
+}
+.out-of-stock {
+    background-color: #dc3545;
+    color: white;
+}
+
+.card {
+    position: relative;
+    background-color: black;
+}
+.card-body img{
+    border-radius:5px;
+}
+.card-img-top
+{
+    object-fit:cover;
+    height:200px;
+}
+.text-overlay {
+    position: absolute;
+    width:50%;
+    height: 87%;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+.navbar{
+    background-color: purple;
+}

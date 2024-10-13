@@ -4,57 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Sports Equipment Inventory</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>University Sports Equipment Inventory</h1>
-        </header>
-
-        <section class="inventory-list">
-            <div class="inventory-item">
-                <h3>Football</h3>
-                <p><strong>Category:</strong> Outdoor</p>
-                <p><strong>Available:</strong> 12</p>
-                <span class="status available">Available</span>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html">
+              <i class="ri-arrow-left-line"></i>    Go Back
+          </a>
+        </div>
+      </nav>
+    <div class="container mt-4 mb-3">
+        <h2 class="text-center mb-4 text-white">University Sports Equipment Inventory</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-1">
+            <!-- Football -->
+            <div class="col">
+                <div class="card text-primary h-100 border-0">
+                    <div class="card-body" style="position: relative;">
+                        <img src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Football Image">
+                        <div class="text-overlay">
+                            <h5 class="card-title">Football</h5>
+                            <p class="card-text">Category: Outdoor</p>
+                            <p class="card-text">Available: 12</p>
+                            <span class="inventory-status available">Available</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="inventory-item">
-                <h3>Basketball</h3>
-                <p><strong>Category:</strong> Indoor/Outdoor</p>
-                <p><strong>Available:</strong> 8</p>
-                <span class="status low-stock">Low Stock</span>
+            <!-- Basketball -->
+            <div class="col">
+                <div class="card text-primary h-100 border-0">
+                    <div class="card-body" style="position: relative;">
+                        <img src="https://cdn.pixabay.com/photo/2022/11/22/20/25/ball-7610545_640.jpg" style="height: 200px; width:100%; object-fit: cover;" alt="Football Image">
+                        <div class="text-overlay">
+                            <h5 class="card-title">Basketball</h5>
+                            <p class="card-text">Category: Indoor/Outdoor</p>
+                            <p class="card-text">Available: 8</p>
+                            <span class="inventory-status low-stock">Low Stock</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="inventory-item">
-                <h3>Tennis Racket</h3>
-                <p><strong>Category:</strong> Racket Sports</p>
-                <p><strong>Available:</strong> 5</p>
-                <span class="status low-stock">Low Stock</span>
+            <!-- Tennis Racket -->
+            <div class="col">
+                <div class="card text-primary h-100 border-0">
+                    <div class="card-body" style="position: relative;">
+                        <img src="https://cdn.pixabay.com/photo/2023/04/17/10/31/tennis-7932067_640.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Football Image">
+                        <div class="text-overlay">
+                            <h5 class="card-title">Tennis Racket</h5>
+                            <p class="card-text">Category: Racket Sports</p>
+                            <p class="card-text">Available: 5</p>
+                            <span class="inventory-status low-stock">Low Stock</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="inventory-item">
-                <h3>Cricket Bat</h3>
-                <p><strong>Category:</strong> Outdoor</p>
-                <p><strong>Available:</strong> 15</p>
-                <span class="status available">Available</span>
+            <!-- Cricket Bat -->
+            <div class="col">
+                <div class="card text-primary h-100 border-0">
+                    <div class="card-body" style="position: relative;">
+                        <img src="cricket-bat.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Football Image">
+                        <div class="text-overlay">
+                            <h5 class="card-title">Cricket Bat</h5>
+                            <p class="card-text">Category: Outdoor</p>
+                            <p class="card-text">Available: 15</p>
+                            <span class="inventory-status available">Available</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="inventory-item">
-                <h3>Badminton Racket</h3>
-                <p><strong>Category:</strong> Racket Sports</p>
-                <p><strong>Available:</strong> 2</p>
-                <span class="status out-of-stock">Out of Stock</span>
+            <!-- Badminton Racket -->
+            <div class="col">
+                <div class="card text-primary h-100 border-0">
+                    <div class="card-body" style="position: relative;">
+                        <img src="https://cdn.pixabay.com/photo/2021/01/02/11/01/badminton-5881209_640.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Football Image">
+                        <div class="text-overlay">
+                            <h5 class="card-title">Badminton Racket</h5>
+                            <p class="card-text">Category: Racket Sports</p>
+                            <p class="card-text">Available: 2</p>
+                            <span class="inventory-status out-of-stock">Out of Stock</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="inventory-item">
-                <h3>Volleyball</h3>
-                <p><strong>Category:</strong> Indoor/Outdoor</p>
-                <p><strong>Available:</strong> 10</p>
-                <span class="status available">Available</span>
+            <!-- Volleyball -->
+            <div class="col">
+                <div class="card text-primary h-100 border-0">
+                    <div class="card-body" style="position: relative;">
+                        <img src="https://cdn.pixabay.com/photo/2021/07/20/14/06/sport-6480825_1280.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Football Image">
+                        <div class="text-overlay">
+                            <h5 class="card-title">Volleyball</h5>
+                            <p class="card-text">Category: Indoor/Outdoor</p>
+                            <p class="card-text">Available: 10</p>
+                            <span class="inventory-status available">Available</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
     </div>
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
