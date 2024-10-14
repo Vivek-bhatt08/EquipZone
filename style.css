@@ -245,3 +245,15 @@ html, body{
     font-size: 15px;
     border-radius: 5px;
 }
+#words{
+    height: 100vh;
+    width: 100%;
+    background-color: #020202;
+    padding: 10vw;
+}
+#words h1{
+    font-size: 3vw;
+color: rgb(217, 255, 0);
+text-align: center;
+font-family: pp woodland;
+}
