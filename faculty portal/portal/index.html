@@ -10,19 +10,6 @@
     <link rel="icon" href="3.png"/>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
-<style>
-    .anchor{
-        color:white;
-        text-decoration: none;
-    }
-    .anchor:hover
-    {
-        color: rgb(72,58,111);
-    }
-    .anchor:visited{
-        color:white;
-    }
-</style>
 <body>
         <div id="main">
                 <div id="nav">
@@ -31,39 +18,30 @@
                             <!-- image hai -->
                         </div> 
                         <!-- equipment inventory -->
-                         <a href="navbar sites/equipment inventory/index.html" class="anchor">
-                            <div class="icons" id="home" title="Inventory">
-                                <i class="ri-home-smile-2-fill"></i>
-                            </div>
-                        </a>
+                        <div class="icons" id="home" title="Inventory" onclick="window.location.href = 'navbar sites/equipment inventory/index.html';">
+                            <i class="ri-home-smile-2-fill"></i>
+                        </div>
+                        
+                    <!-- issue new item -->
+                        <div class="icons" title="Issue New Item" onclick="window.location.href = 'navbar sites/issue items/main issue portal.html';">
+                            <i class="ri-hand-coin-fill"></i>
+                        </div>
 
-                        <!-- issue new item -->
-                         <a href="navbar sites/issue items/main issue portal.html" class="anchor">
-                            <div class="icons" title="Issue New Item">
-                                <i class="ri-hand-coin-fill"></i>
-                            </div>
-                        </a>
+                    <!-- returning items -->
+                        <div class="icons" title="Returning items" onclick="window.location.href = 'navbar sites/returning items/index.html';">
+                            <i class="fa-solid fa-person-walking-arrow-loop-left"></i>
+                        </div>
 
-                        <!-- returning items -->
-                        <a href="navbar sites/returning items/index.html" class="anchor">
-                            <div class="icons" title="Returning items">
-                                <i class="fa-solid fa-person-walking-arrow-loop-left"></i>
-                            </div>
-                        </a>
-
-                        <!-- settings -->
-                        <a href="navbar sites/settings/index.html" class="anchor">
-                            <div class="icons" title="Setting">
-                                <i class="ri-settings-3-fill"></i>
-                            </div>
+                    <!-- settings -->
+                        <div class="icons" title="Setting" onclick="window.location.href = 'navbar sites/settings/index.html';">
+                            <i class="ri-settings-3-fill"></i>
+                        </div>
 
 
-                        <!-- issue history -->
-                        <a href="navbar sites/issue history/index.html" class="anchor">
-                            <div class="icons" title="Issue History">
-                                <i class="fa-solid fa-hands-holding-child"></i>
-                            </div>
-                        </a>
+                    <!-- issue history -->
+                        <div class="icons" title="Issue History" onclick="window.location.href = 'navbar sites/issue history/index.html';">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                        </div>
                     </div>
                 </div>
                 <!-- nav ended -->
