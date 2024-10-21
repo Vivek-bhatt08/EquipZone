@@ -111,6 +111,7 @@ nav{
 #icons h4{
     font-size: 1.5rem;
 }
+
 /* nav to be responsive */
 #ham-burger{
     display: none;
@@ -201,33 +202,22 @@ nav{
     width: 100%;
 }
 
+
+section{
+    height: 90%;
+    width: 100%;
+    background-color: blue;
+}
 #client{
-    height: 20vh;
-    width: 100%;
-    /* background-color: red; */
-    display: flex;
-    justify-content:  center;
-    align-items: center;    
-    gap: 1vw;
-}
-
-#client .box{
-    height: 70%;
-    width: 15%;
-    /* background-color: black; */
-    margin-top: 3vh;
-}
-
-#main-content{
-    height: 100%;
-    width: 100%;
-    /* display: flex; */
-    background-color: black;
+    height: 30%;
+    background-color:rgb(27, 27, 62);
 }
 
 
+
+/* content */
 #content{
-    height: 68vh;
+    height: 70%;
     width: 100%;
     /* background-color: antiquewhite; */
     display: flex;
@@ -247,9 +237,6 @@ nav{
     width: 100%;
 
 }
-
-
-
 #content #banner2{
     height: 80%;
     width: 30%;
@@ -271,37 +258,130 @@ nav{
     height: 100%;
     width: 100%;
 }
+/* content banner ended */
 
-#quotes{
-    height: 35vh;
+
+
+
+#main-content{
+    height: 100%;
     width: 100%;
-    background-color: #F5F5F5;
+    /* display: flex; */
+    background-color: black;
+}
+
+
+
+
+/* issue portal started */
+#issue-item{
+    height: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+#issue-item #left{
+    height: 100%;
+    width: 50%;
+    background-color:#F5F5F5;
+}
+
+#issue-item #top{
+    height: 20%;
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: red; */
 }
 
-#quotes #top{
-    height: 60%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-}
-#quotes strong{
-    color: black;
-}
-
-#quotes #top p{
+#issue-item #top h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.3vw;
+    font-size: 3.5vw;
     font-weight: 500;
-    text-align: center;
-    line-height: 4.5vh;
-    color: rgb(176, 175, 175);
 }
+
+#issue-item #bottom{
+    height: 80%;
+    width: 100%;
+    /* background-color: green; */
+    padding: 0 2.2vw;
+}
+
+#issue-item #bottom .child{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+
+#issue-item #bottom .child input{
+    height: 8vh;
+    width: 30vw;
+    border: none;
+    border-radius: 5%;
+}
+
+#issue-item #bottom .child label{
+    font-size: 1.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+#issue-item #bottom .child button{
+    padding: 2vh 6vw;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1.3vw;
+    margin-top: 5vh;
+    margin-left: 7vw;
+    border-radius: 10%;
+}
+
+
+#issue-item #bottom #unique input{
+    height: 2vh;
+    width: 2vw;
+}
+
+#issue-item #right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#issue-item #right img{
+    height: 100%;
+    width: 100%;
+}
+
+/* issue portal ended */
+
+
+
+/* return items started ---vinay */
+#return-items{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+}
+/* return items ended */
+
+
+
+/* issue History */
+#issue-history{
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+}
+
+/* Issue history ended */
+
+
 
 #footer{
     height: 60vh;
