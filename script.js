@@ -45,5 +45,5 @@ if (loggedInUser) {
 	window.alert(`Logged in as: ${str}`);
 } else {
     // Redirect to login page if no user is logged in
-    window.location.href = 'login.html';
+    window.location.href = 'Authentication/login.html';
 }
