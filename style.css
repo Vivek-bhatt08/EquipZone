@@ -9,18 +9,6 @@ html, body{
     width: 100%;
 }
 
-
-::-webkit-scrollbar{
-    background-color: black;
-}
-::-webkit-scrollbar-thumb{
-    background-color: #fff;
-}
-::-webkit-scrollbar-button{
-    background-color: #fff;
-}
-
-
 #main{
     height: 100%;
     width: 100%;
@@ -114,6 +102,7 @@ nav{
     border-bottom-right-radius: 10px;
     border:1px solid darkgray;
     display: none;
+    transition: all 5s ease;
 }
 #icons h4{
     font-size: 1.5rem;
