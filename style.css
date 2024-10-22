@@ -286,7 +286,7 @@ section{
 
 #issue-item #top h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3.5vw;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -299,8 +299,10 @@ section{
 
 #issue-item #bottom .child{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     margin-bottom: 3vh;
+    /* background-color: rebeccapurple; */
+    justify-content: space-between;
 }
 
 #issue-item #bottom .child input{
@@ -311,26 +313,25 @@ section{
 }
 
 #issue-item #bottom .child label{
-    font-size: 1.5vw;
+    font-size: 1rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
 }
 
 #issue-item #bottom .child button{
-    padding: 2vh 6vw;
-    border: none;
+    border: 2px solid darkblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 500;
-    font-size: 1.3vw;
-    margin-top: 5vh;
-    margin-left: 7vw;
-    border-radius: 10%;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
 }
-
-
-#issue-item #bottom #unique input{
-    height: 2vh;
-    width: 2vw;
+#issue-item #bottom .child button:hover{
+    background-color: rgb(205, 136, 61);
+    color: white;
+    cursor: pointer;
+    border: 2px solid rgb(66, 56, 56);
+    border-radius: 10px;
 }
 
 #issue-item #right{
@@ -345,17 +346,115 @@ section{
     height: 100%;
     width: 100%;
 }
+#issue-item #bottom .child select{
+    height: 8vh;
+    width: 15vw;
+}
 
+@media (max-width:800px) {
+    #issue-item #right{
+        display: none;
+    }
+    #issue-item #left{
+        background-color:rgb(198, 198, 198);
+        width: 100%;
+    }
+    #issue-item #bottom .child input{
+        margin-right: 40%;
+    }
+    #issue-item #bottom .child select{
+        margin-right: 40%;
+    }
+    #issue-item #top{
+       justify-content: left;
+       padding-left: 3%;
+    }
+}
+@media (max-width:650px){
+    #issue-item #bottom .child input{
+        margin-right: 20%;
+        font-size: 0.7rem;
+    }
+    #issue-item #bottom .child select{
+        margin-right: 20%;
+    }
+}
+@media (max-width:480px) {
+    #issue-item #bottom .child input{
+        font-size: 0.6rem;
+        margin-right: 40%;
+    }
+    #issue-item #bottom .child select{
+        margin-right: 40%;
+    }
+
+}
+@media (max-width:330px) {
+    #issue-item #bottom .child input{
+        font-size: 0.45rem;
+        margin-right: 10%;
+    }
+    #issue-item #bottom .child select{
+        margin-right: 10%;
+    }
+
+}
 /* issue portal ended */
 
 
 
 /* return items started ---vinay */
 #return-items{
+    height:auto;
+    width: 100%;
+}
+
+
+.head-text{
+    height: 10%;
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: red; */
+    padding: 1.5%;
+}
+.head-text h1{
+    text-align: center;
+}
+.search-input-icon{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-input-icon input{
     height: 100%;
     width: 100%;
-    background-color: aquamarine;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
 }
+.search-input-icon i{
+    font-size:1.5rem ;
+    padding-left: 5px;
+}
+
+.return-container{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.return-container-info{
+    background-color: rgb(96, 137, 140);
+    padding: 4%;
+    width: 33%;
+    /* background-color: rebeccapurple; */
+    line-height: 30px;
+    margin: 0.1%;
+}
+
 /* return items ended */
 
 
