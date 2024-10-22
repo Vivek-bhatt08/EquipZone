@@ -26,3 +26,24 @@ function searchShown(){
 }
 
 
+
+
+
+// Retrieve the logged-in user's information from localStorage
+const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+
+// Check if a user is logged in and display their email
+if (loggedInUser) {
+    let a=`${loggedInUser.email}`;
+    let str="";
+    str+=a[0].toUpperCase();
+    for(let i=1;a[i]!='@';i++)
+    {
+        if(isNaN(a[i]))
+        str+=a[i];
+    }
+	window.alert(`Logged in as: ${str}`);
+} else {
+    // Redirect to login page if no user is logged in
+    window.location.href = 'login.html';
+}
