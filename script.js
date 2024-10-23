@@ -123,7 +123,6 @@ if (loggedInUser) {
     window.location.href = 'Authentication/login.html';
 }
 
-<<<<<<< HEAD
 
 // issue form
 const form = document.getElementById('equipmentForm');
@@ -252,5 +251,3 @@ const form = document.getElementById('equipmentForm');
         // Initialize the empty messages
         updateEmptyMessage();
         updateHistoryMessage();
-=======
->>>>>>> 7175530bb57f7c2d22e33a522a327b3c6e16a550
