@@ -121,6 +121,7 @@ if (loggedInUser) {
 } else {
     // Redirect to login page if no user is logged in
     window.location.href = 'Authentication/login.html';
+<<<<<<< HEAD
 }
 
 <<<<<<< HEAD
@@ -254,3 +255,6 @@ const form = document.getElementById('equipmentForm');
         updateHistoryMessage();
 =======
 >>>>>>> 7175530bb57f7c2d22e33a522a327b3c6e16a550
+=======
+}
+>>>>>>> parent of 4cd895f (script added)
