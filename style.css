@@ -218,7 +218,7 @@ section{
     display: none;
 }
 
-.container{
+.container1{
     height: 100%;
     width: 100%;
     /* background-color: blue; */
@@ -231,7 +231,7 @@ section{
     animation-iteration-count: infinite;
 }
 
-.container img{
+.container1 img{
     height: 100%;
     width: 8%;    
     border-radius: 50%;
