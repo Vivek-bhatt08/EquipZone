@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+::-webkit-scrollbar{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+}
+::-webkit-scrollbar-button{
+    background-color: #fff;
+}
+
+
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: wheat; */
+}
+
+nav{
+    height: 13vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo-content{
+    height: 100%;
+    width:23%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 0.8vw; */
+}
+.logo-img{
+    height: 100%;
+    width: 100%;
+    background-image: url('EQUIP.png');
+    background-size: 60% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#logo-content h4{
+    font-family: monument;
+    font-size: 2vw;
+    text-decoration: underline 0.4vw;
+    text-underline-offset: 0.8vh;
+    font-weight: bolder;
+    letter-spacing:2px;
+    text-transform: uppercase;
+}
+
+#logo-content span{
+    font-size: 2vw;
+    font-family: monument;
+    color: rgb(116, 111, 111);
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+#nav-center{
+    display: flex;
+    gap: 2.5vw;
+    cursor: pointer;
+}
+
+#nav-center h4{
+    font-family: monospace;
+    font-size: 1.3vw;
+    font-weight: bolder;
+    /* text-transform: uppercase; */
+    transition: all ease 0.3s;
+}
+
+#nav-center h4:hover{
+    text-decoration: underline 0.2vw;
+    text-underline-offset: 1vh;
+}
+
+#icons{
+    /* background-color: rebeccapurple; */
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+#icons h4{
+    font-size: 1.5rem;
+}
+/* nav to be responsive */
+#ham-burger{
+    display: none;
+}
+@media  (max-width:800px) {
+    #logo-content h4,span{
+        display: none;
+    }
+    #logo-content{
+        width: 15%;
+    }
+    #nav-center h4{
+        font-size: 0.7rem;
+    }
+}
+@media  (max-width:600px) {
+    #logo-content{
+        width: 20%;
+    }
+    #nav-center{
+        display: none;
+    }
+    #ham-burger{
+        display: block;
+        font-size: 1.5rem;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    #icons{
+        padding-right: 5%;
+        gap: 1rem;
+    }
+    
+    #icons h4{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:400px) {
+    #logo-content{
+        width: 25%;
+    }
+}
+
+
+
+
+
+#nav-below-content{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    background-color: whitesmoke;
+}
+
+#nav-below-content h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+#nav-below-content span{
+    color: orangered;
+    font-size: 1.9vw;
+    font-family: monospace;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+
+#center{
+    height: 80%;
+    width: 100%;
+    background-color: red;
+}
+
+#img-container{
+    /* background-color: red; */
+}
+
+#img-container img{
+    height: 100%;
+    width: 100%;
+}
+
+#client{
+    height: 20vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content:  center;
+    align-items: center;    
+    gap: 1vw;
+}
+
+#client .box{
+    height: 70%;
+    width: 15%;
+    /* background-color: black; */
+    margin-top: 3vh;
+}
+
+#main-content{
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+    background-color: black;
+}
+
+
+#content{
+    height: 68vh;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#content #banner1{
+    height: 80%;
+    width: 30%;
+    /* background-color: red; */
+}
+
+#content #banner1 img{
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+#content #banner2{
+    height: 80%;
+    width: 30%;
+    /* background-color: green; */
+}
+
+#content #banner2 img{
+    height: 100%;
+    width: 100%;
+}
+
+#content #banner3{
+    height: 80%;
+    width: 30%;
+    /* background-color: blue; */
+}
+
+#content #banner3 img{
+    height: 100%;
+    width: 100%;
+}
+
+#quotes{
+    height: 35vh;
+    width: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#quotes #top{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+#quotes strong{
+    color: black;
+}
+
+#quotes #top p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 500;
+    text-align: center;
+    line-height: 4.5vh;
+    color: rgb(176, 175, 175);
+}
+
+#footer{
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-top: 7vh;
+}
+
+#footer .child h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7vw;
+    font-weight: 500;
+    margin-bottom: 3vh;
+    text-transform: uppercase;
+    color: black;
+}
+
+#footer .child h4{
+    margin-bottom: 1.6vh;
+    color: #A1ACBD;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    transition: all ease 0.3s;
+}
+
+#footer .child h4:hover{
+    color: orangered;
+}
+
+
+
+footer{
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-top: 5vh;
+}
+
+
+
+footer #first h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7vw;
+    font-weight: 500;
+    margin-bottom: 5vh;
+    text-transform: uppercase;
+}
+
+footer #first h4{
+    margin-bottom: 2vh;
+    color: rgb(176, 175, 175);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    transition: all ease 0.3s;
+}
+
+footer #first h4:hover{
+    color: orangered;
+}
+
+
+footer #second h2{
+    margin-bottom: 5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+footer #second h4{
+    margin-bottom: 2vh;
+    color: rgb(176, 175, 175);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    transition: all ease 0.3s;
+}
+footer #second h4:hover{
+    color: orangered;
+}
+
+
+footer #third h2{
+    margin-bottom: 5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+footer #third h4{
+    margin-bottom: 2vh;
+    color: rgb(176, 175, 175);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    transition: all ease 0.3s;
+}
+footer #third h4:hover{
+    color: orangered;
+}
+
+footer #fourth h2{
+    margin-bottom: 5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+footer #fourth h4{
+    margin-bottom: 2vh;
+    color: rgb(176, 175, 175);  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    transition: all ease 0.3s;
+}
+footer #fourth h4:hover{
+    color: orangered;
+}
+
+footer #fourth #input-box{
+    /* background-color: red; */
+    height: 5vh;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #fourth #input-box #one{
+    height: 100%;
+    width: 90%;
+}
+
+footer #fourth #input-box #one input{
+    height: 100%;
+    width: 100%;
+}
+
+footer #fourth #input-box #two{
+    height: 100%;
+    width: 10%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #fourth #input-box #two i{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    font-size: 2.6vw;
+    transition: all ease 0.3s;
+}
+
+footer #fourth #input-box #two i:hover{
+    color: orangered;
+}
+
+
+
+
