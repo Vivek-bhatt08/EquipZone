@@ -4,6 +4,81 @@
 // function changeSlide(n) {
 //     showSlides(slideIndex += n);
 // }
+var a=document.querySelector("#page1")
+var b=document.querySelector("#page2")
+var c=document.querySelector("#page3")
+var d=document.querySelector("#page4")
+var tl=gsap.timeline()
+a.addEventListener('mouseenter',()=>{
+
+
+    tl.to("#animate1",{
+        y:-300,
+        duration:.5,
+        scale:1
+    })
+})
+a.addEventListener('mouseleave',()=>{
+
+    tl.to("#animate1",{
+      y:"-45%",
+      duration:1,
+      stagger:.2
+  // scale:1.2
+  })
+  })
+  b.addEventListener('mouseenter',()=>{
+
+    tl.to("#animate2",{
+        y:-300,
+        duration:.5,
+        scale:1
+    })
+})
+b.addEventListener('mouseleave',()=>{
+
+    tl.to("#animate2",{
+      y:"-45%",
+      duration:1,
+      stagger:.2
+  // scale:1.2
+  })
+  })
+  c.addEventListener('mouseenter',()=>{
+
+    tl.to("#animate3",{
+        y:-300,
+        duration:.5,
+        scale:1
+    })
+})
+c.addEventListener('mouseleave',()=>{
+
+    tl.to("#animate3",{
+      y:"-45%",
+      duration:1,
+      stagger:.2
+  // scale:1.2
+  })
+  })
+  d.addEventListener('mouseenter',()=>{
+
+    tl.to("#animate4",{
+        y:-300,
+        duration:.5,
+        scale:1
+    })
+})
+d.addEventListener('mouseleave',()=>{
+
+    tl.to("#animate4",{
+      y:"-45%",
+      duration:1,
+      stagger:.2
+  // scale:1.2
+  })
+  })
+ 
 
 // function showSlides(n) {
 //     const slides = document.querySelectorAll('.slide');
@@ -48,6 +123,7 @@ if (loggedInUser) {
     window.location.href = 'Authentication/login.html';
 }
 
+<<<<<<< HEAD
 
 // issue form
 const form = document.getElementById('equipmentForm');
@@ -176,3 +252,5 @@ const form = document.getElementById('equipmentForm');
         // Initialize the empty messages
         updateEmptyMessage();
         updateHistoryMessage();
+=======
+>>>>>>> 7175530bb57f7c2d22e33a522a327b3c6e16a550
