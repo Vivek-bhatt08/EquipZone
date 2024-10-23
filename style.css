@@ -197,15 +197,69 @@ section{
     width: 100%;
 }
 #client{
-    height: 25%;
-    background-color:rgb(27, 27, 62);
+    height: 20%;
+    background-color: #F5F5F5;
+    margin-top: 2vh;
 }
+
+/* Css of scroll animation starts here */
+
+#scroll{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    /* margin-top: 10vh; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#scroll::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    /* border: 2px solid black; */
+    display: inline-block;
+    padding: 2vh 1vw;
+    animation-name: anime;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.container img{
+    height: 100%;
+    width: 8%;    
+    border-radius: 50%;
+    object-fit: cover;  
+    margin: 0 1.5vw;
+    object-position: center;
+}
+
+@keyframes anime {
+        from{
+            transform: translate(0);
+        }
+        to{
+            transform: translate(-100%);
+        }
+    }
+
+
+/* Css of scoll animation ends here */
+
+
+
 
 
 
 /* content */
 #content{
-    height: 75%;
+    height: 80%;
     width: 100%;
     /* background-color: antiquewhite; */
     display: flex;
