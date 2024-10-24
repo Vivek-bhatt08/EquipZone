@@ -7,6 +7,7 @@
 html, body{
     height: 100%;
     width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #main{
@@ -376,13 +377,13 @@ margin-bottom: 14vh;
     font-size: 2vw;
     /* background-color: red; */
 }
-button {
+/* button {
     font-size: 1.2em;
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
     color: black;
-}
+} */
 #animate1{
     text-align: center;
     height: 50vh;
@@ -482,20 +483,70 @@ img{
     height: 100%;
     width: 50%;
 }
+#issue-item-left h1{
+    background-color: #A1ACBD;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2.5rem;
+}
+#issue-item-left form{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:self-start;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+#issue-item-left form label{
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#issue-item-left input,select{
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 80%;
+}
+#issue-item-left button{
+    font-size: 1.5rem;
+    background-color: lightgray;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0.5rem 0.8rem;
+}
+#issue-item-right{
+    height: 100%;
+    width: 50%;
+}
 #issue-item-right img{
     height: 100%;
     width: 100%;
+}
+
+@media (max-width:650px) {
+    #issue-item-right{
+        display: none;
+    }
+    #issue-item-left{
+        height: 100%;
+        width: 100%;
+    }
 }
 
 /* issue portal ended */
 
 
 
-/* return items started ---vinay */
+/* return items started -- */
 #return-items{
-    height:auto;
-    min-height: 30%;
+    min-height:50%;
+    background-color: #b8bec6;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #equipmentList{
     width: 100%;
@@ -514,15 +565,15 @@ img{
     margin-bottom: 0.5rem;
 }
 
+/* return items ended */
+
+
 
 .head-text{
     height: 10%;
     width: 100%;
     font-size: 1rem;
-    display: flex;
-    justify-content: space-around;
-    /* background-color: red; */
-    padding: 1.5%;
+    padding-bottom: 5%;
 }
 .head-text h1{
     text-align: center;
@@ -545,6 +596,36 @@ img{
     padding-left: 5px;
 }
 
+
+/* issue history started */
+#issue-history{
+    width: 100%;
+    min-height: 50%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.remove-btn{
+    background-color: red;
+    color: white;
+    padding: 0.6rem 0.9rem;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.history-item{
+    background-color: #f0f0f0;
+    width: 100%;
+    padding:30px;
+}
+.delete-all-btn{
+    background-color: red;
+    color: white;
+    padding: 0.6rem 0.9rem;
+    border: 1px solid white;
+    border-radius: 10px;
+}
 /* Issue history ended */
 
 

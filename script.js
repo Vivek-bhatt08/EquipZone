@@ -133,14 +133,14 @@ const form = document.getElementById('equipmentForm');
         const deleteAllHistoryBtn = document.getElementById('deleteAllHistory');
 
         function updateEmptyMessage() {
-            // Show or hide the empty message based on the presence of child elements
-            if (equipmentList.children.length === 1) { // Only the empty message is present
+            // Agr koi entry nhi hogi toh ....
+            if (equipmentList.children.length === 1) { // if no entry
                 emptyMessage.style.display = 'block';
                 emptyMessage.style.textAlign='center';
                 emptyMessage.style.padding='30px';
                 emptyMessage.style.fontSize='20px';
             } else {
-                emptyMessage.style.display = 'none';
+                emptyMessage.style.display = 'none'; //entry is present then.
             }
         }
 
@@ -156,16 +156,16 @@ const form = document.getElementById('equipmentForm');
         }
 
         form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault(); // without data submit hone se rokega
 
-            // Get the values from the input fields
+            // Get the values
             const studentName = document.getElementById('studentName').value;
             const studentID = document.getElementById('studentID').value;
             const dept = document.getElementById('dept').value;
             const mobNo = document.getElementById('MobNo').value;
             const equipment = document.getElementById('equipment').value;
 
-            // Create a new div to store this entry
+            // Create a new div to store the entry
             const newEntry = document.createElement('div');
             newEntry.classList.add('equipment-item');
             newEntry.className='entry-content-style';
@@ -175,23 +175,23 @@ const form = document.getElementById('equipmentForm');
             entryContent.innerHTML = 
             `
                 <div>
-                    <h4>Student Name:</h4>
+                    <h5>Student Name: </h4>
                     <p>${studentName}</p>
                 </div>
                 <div>
-                    <h4>Student Id:</h4>
+                    <h5>Student Id: </h5>
                     <p>${studentID}</p>
                 </div>
                 <div>
-                    <h4>Department:</h4>
+                    <h5>Department: </h5>
                     <p>${dept}</p>
                 </div>
                 <div>
-                    <h4>Mobile No.:</h4>
+                    <h5>Mobile No.: </h5>
                     <p>${mobNo}</p>
                 </div>
                 <div>
-                    <h4>Equipment:</h4>
+                    <h5>Equipment: </h5>
                     <p>${equipment}</p>
                 </div>
                `;
@@ -201,25 +201,28 @@ const form = document.getElementById('equipmentForm');
             // Create a remove button
             const removeButton = document.createElement('button');
             removeButton.classList.add('remove-btn');
-            removeButton.textContent = 'Remove';
+            removeButton.textContent = 'Return';
 
-            // Add a click event listener to remove the entry and move it to history
+            // remove krne ke liye event
             removeButton.addEventListener('click', function() {
                 equipmentList.removeChild(newEntry);
 
-                // Move the entry to the issue history
+                //remove hone ke baad issue history me jana
                 const historyEntry = document.createElement('div');
                 historyEntry.classList.add('history-item');
-                historyEntry.innerHTML = `<strong>${studentName} (ID: ${studentID})</strong> returned <em>${equipment}</em>.`;
+                historyEntry.innerHTML =
+                 `
+                 <strong>${studentName} (ID: ${studentID})</strong> returned <em>${equipment}</em> <br><br>
+                 `;
 
                 issueHistory.appendChild(historyEntry);
 
-                // Update empty messages
+                // Update empty messages taki wo msg jo hmne dikhaye the remove ho jaye
                 updateEmptyMessage();
                 updateHistoryMessage();
             });
 
-            // Append the content and the remove button to the new entry div
+            // return items me entry or button add hoga ...
             newEntry.appendChild(entryContent);
             newEntry.appendChild(removeButton);
 
@@ -229,25 +232,21 @@ const form = document.getElementById('equipmentForm');
             // Update empty message visibility
             updateEmptyMessage();
 
-            // Clear the form fields after submission
+            //form waps empty krna
             form.reset();
         });
 
         // Event listener for "Delete All History" button
         deleteAllHistoryBtn.addEventListener('click', function() {
-            // Loop through issueHistory and remove all children except historyMessage
             while (issueHistory.firstChild) {
                 issueHistory.removeChild(issueHistory.firstChild);
             }
 
-            // Re-append the historyMessage after clearing the issueHistory
             issueHistory.appendChild(historyMessage);
-
-            // Update history message visibility
             updateHistoryMessage();
         });
 
 
-        // Initialize the empty messages
+        // jb empty hoga uske liye yha call krna
         updateEmptyMessage();
         updateHistoryMessage();
