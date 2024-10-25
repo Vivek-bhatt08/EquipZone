@@ -194,13 +194,12 @@ nav{
 
 
 section{
-    height: 90%;
+    height: 85%;
     width: 100%;
 }
 #client{
     height: 20%;
     background-color: #F5F5F5;
-    margin-top: 2vh;
 }
 
 /* Css of scroll animation starts here */
@@ -258,50 +257,56 @@ section{
 
 
 
-/* content */
-#content{
+/* u-content */
+#u-content{
     height: 80%;
     width: 100%;
-    /* background-color: antiquewhite; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:#d5d8dbc8; */
+}
+
+#u-box{
+    height: 65%;
+    width: 100%;
+    /* background-color: blue; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    /* background-color: lightgrey; */
 }
 
 
-#content #banner1{
-    height: 80%;
-    width: 30%;
-    /* background-color: red; */
+#u-box::-webkit-scrollbar{
+    display: none;
 }
 
-#content #banner1 img{
+#u-box::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+
+#top::-webkit-scrollbar{
+    /* display: none; */
+    /* color: transparent; */
+    height: 8px;
+}
+
+
+#u-box img{
     height: 100%;
-    width: 100%;
-
-}
-#content #banner2{
-    height: 80%;
     width: 30%;
-    /* background-color: green; */
+    flex-shrink: 0;
+    margin: 0 2vw;
+    z-index: 10;
+    border-radius: 10px / 30px;
+    /* box-shadow:1px 1px 5px 5px purple; */
 }
 
-#content #banner2 img{
-    height: 100%;
-    width: 100%;
-}
-
-#content #banner3{
-    height: 80%;
-    width: 30%;
-    /* background-color: blue; */
-}
-
-#content #banner3 img{
-    height: 100%;
-    width: 100%;
-}
-/* content banner ended */
+/* u- content banner ended */
 
 
 
