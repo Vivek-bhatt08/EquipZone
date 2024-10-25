@@ -182,7 +182,7 @@
                 <input type="text" id="studentName" required><br><br>
                 
                 <label for="studentID">Student ID:</label>
-                <input type="text" id="studentID" required><br><br>
+                <input type="number" id="studentID" required><br><br>
 
                 <label for="Department">Department:</label>
                 <input type="text" id="dept" required><br><br>
@@ -191,13 +191,13 @@
                 <input type="number" id="MobNo" required><br><br>
 
                 <label for="equipment">Equipment to be issued:</label>
-                <select name="" id="equipment">
-                    <option value="football">Select Your game</option>
+                <select name="" id="equipment" required>
+                    <option hidden disabled selected value>Select Your game</option>
                     <option value="football">Football</option>
-                    <option value="football">Football</option>
-                    <option value="football">Football</option>
-                    <option value="football">Football</option>
-                    <option value="football">Football</option>
+                    <option value="cricket">Cricket</option>
+                    <option value="tennis">Tennis</option>
+                    <option value="fussball">Fussball</option>
+                    <option value="pool">Pool</option>
                 </select>
                 <br><br>
                 <button type="submit">Issue Equipment</button>
