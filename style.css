@@ -238,7 +238,7 @@ section{
     width: 8%;    
     border-radius: 50%;
     object-fit: cover;  
-    margin: 0 1.5vw;
+    margin: 0 3vw;
     object-position: center;
 }
 
@@ -250,6 +250,13 @@ section{
             transform: translate(-100%);
         }
     }
+
+#unique-margin{
+    margin-left: 1rem;
+}
+
+
+
 
 
 /* Css of scoll animation ends here */
