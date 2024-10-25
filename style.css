@@ -197,6 +197,8 @@ section{
     height: 85%;
     width: 100%;
 }
+
+
 #client{
     height: 20%;
     background-color: #F5F5F5;
@@ -306,7 +308,25 @@ section{
     /* box-shadow:1px 1px 5px 5px purple; */
 }
 
+@media (max-width:750px){
+    #u-content{
+        height: 80%;    
+    }
+    section{
+        height: 50%;
+        /* background-color: red; */
+    }
+}
+
+@media (max-width:550px) {
+    #u-box img{
+        width: 46%;
+    }
+}
+
 /* u- content banner ended */
+
+
 
 
 
