@@ -4,81 +4,117 @@
 // function changeSlide(n) {
 //     showSlides(slideIndex += n);
 // }
-var a=document.querySelector("#page1")
-var b=document.querySelector("#page2")
-var c=document.querySelector("#page3")
-var d=document.querySelector("#page4")
-var tl=gsap.timeline()
-a.addEventListener('mouseenter',()=>{
+// var a=document.querySelector("#page1")
+// var b=document.querySelector("#page2")
+// var c=document.querySelector("#page3")
+// var d=document.querySelector("#page4")
+// var tl=gsap.timeline()
+// a.addEventListener('mouseenter',()=>{
 
 
-    tl.to("#animate1",{
-        y:-300,
-        duration:.5,
-        scale:1
-    })
-})
-a.addEventListener('mouseleave',()=>{
+//     tl.to("#animate1",{
+//         y:-300,
+//         duration:.5,
+//         scale:1
+//     })
+// })
+// a.removeEventListener('mouseenter', MouseEnter);
 
-    tl.to("#animate1",{
-      y:"-45%",
-      duration:1,
-      stagger:.2
-  // scale:1.2
-  })
-  })
-  b.addEventListener('mouseenter',()=>{
+// a.addEventListener('mouseleave',()=>{
 
-    tl.to("#animate2",{
-        y:-300,
-        duration:.5,
-        scale:1
-    })
-})
-b.addEventListener('mouseleave',()=>{
+//     tl.to("#animate1",{
+//       y:"-45%",
+//       duration:1,
+//       stagger:.2
+//   // scale:1.2
+//   })
+//   })
 
-    tl.to("#animate2",{
-      y:"-45%",
-      duration:1,
-      stagger:.2
-  // scale:1.2
-  })
-  })
-  c.addEventListener('mouseenter',()=>{
+//   b.addEventListener('mouseenter',()=>{
 
-    tl.to("#animate3",{
-        y:-300,
-        duration:.5,
-        scale:1
-    })
-})
-c.addEventListener('mouseleave',()=>{
+//     tl.to("#animate2",{
+//         y:-300,
+//         duration:.5,
+//         scale:1
+//     })
+// })
+// b.addEventListener('mouseleave',()=>{
 
-    tl.to("#animate3",{
-      y:"-45%",
-      duration:1,
-      stagger:.2
-  // scale:1.2
-  })
-  })
-  d.addEventListener('mouseenter',()=>{
+//     tl.to("#animate2",{
+//       y:"-45%",
+//       duration:1,
+//       stagger:.2
+//   // scale:1.2
+//   })
+//   })
+//   c.addEventListener('mouseenter',()=>{
 
-    tl.to("#animate4",{
-        y:-300,
-        duration:.5,
-        scale:1
-    })
-})
-d.addEventListener('mouseleave',()=>{
+//     tl.to("#animate3",{
+//         y:-300,
+//         duration:.5,
+//         scale:1
+//     })
+// })
+// c.addEventListener('mouseleave',()=>{
 
-    tl.to("#animate4",{
-      y:"-45%",
-      duration:1,
-      stagger:.2
-  // scale:1.2
-  })
-  })
- 
+//     tl.to("#animate3",{
+//       y:"-45%",
+//       duration:1,
+//       stagger:.2
+//   // scale:1.2
+//   })
+//   })
+//   d.addEventListener('mouseenter',()=>{
+
+//     tl.to("#animate4",{
+//         y:-300,
+//         duration:.5,
+//         scale:1
+//     })
+// })
+// d.addEventListener('mouseleave',()=>{
+
+//     tl.to("#animate4",{
+//       y:"-45%",
+//       duration:1,
+//       stagger:.2
+//   // scale:1.2
+//   })
+//   })
+const a = document.querySelector("#page1");
+const b = document.querySelector("#page2");
+const c = document.querySelector("#page3");
+const d = document.querySelector("#page4");
+
+function createTimeline(target) {
+    const timeline = gsap.timeline({ paused: true });
+    timeline.to(target, { y: -300, duration: .6, scale: 1.05 });
+    // timeline.to(target, { y: -45, duration: 1, stagger: 0.2 }, "reverse");
+    return timeline;
+}
+
+const timelines = {
+    animate1: createTimeline("#animate1"),
+    animate2: createTimeline("#animate2"),
+    animate3: createTimeline("#animate3"),
+    animate4: createTimeline("#animate4")
+};
+
+function addHoverEffect(element, animation) {
+    element.addEventListener('mouseenter', () => {
+        animation.play();
+    });
+
+    element.addEventListener('mouseleave', () => {
+        animation.reverse();
+    });
+}
+
+addHoverEffect(a, timelines.animate1);
+addHoverEffect(b, timelines.animate2);
+addHoverEffect(c, timelines.animate3);
+addHoverEffect(d, timelines.animate4);
+
 
 // function showSlides(n) {
 //     const slides = document.querySelectorAll('.slide');
