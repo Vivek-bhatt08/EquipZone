@@ -106,8 +106,14 @@ nav{
     transition: all 5s ease;
 }
 #icons h4{
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
+    padding: 0.5rem 0.8rem;
+    background-color: black;
+    color: white;
+}
+#icons h4:hover{
+    background-color: #212121;
 }
 
 /* nav to be responsive */
